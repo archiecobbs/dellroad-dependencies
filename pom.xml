@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>3.1.4</version>
+    </parent>
+    <groupId>org.dellroad</groupId>
+    <version>3.1.4.0</version>
+    <artifactId>dellroad-dependencies</artifactId>
+    <name>DellRoad Dependencies</name>
+    <packaging>pom</packaging>
+    <description>A self-consistent set of dependency versions for common dependencies.</description>
+    <url>https://github.com/archiecobbs/dellroad-dependencies</url>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/archiecobbs/dellroad-dependencies/issues</url>
+    </issueManagement>
+    <scm>
+        <url>https://github.com/archiecobbs/dellroad-dependencies/</url>
+        <connection>scm:git:git://github.com/archiecobbs/dellroad-dependencies.git</connection>
+        <developerConnection>scm:git:git://github.com/archiecobbs/dellroad-dependencies.git</developerConnection>
+    </scm>
+    <developers>
+        <developer>
+            <id>archie</id>
+            <name>Archie Cobbs</name>
+            <email>archie.cobbs@gmail.com</email>
+        </developer>
+    </developers>
+    <properties>
+
+        <!-- Overridden dependency versions -->
+        <maven-javadoc-plugin.version>3.6.0</maven-javadoc-plugin.version><!-- avoid MJAVADOC-769 -->
+
+        <!-- Additional dependency versions -->
+        <ant-contrib.version>1.0b3</ant-contrib.version>
+        <apache-poi.version>4.1.2</apache-poi.version>
+        <bonecp.version>0.8.0.RELEASE</bonecp.version>
+        <cronutils.version>9.0.2</cronutils.version>
+        <dellroad-stuff.version>3.0.0</dellroad-stuff.version>
+        <expressly.version>5.0.0</expressly.version>
+        <guava.version>32.1.2-jre</guava.version>
+        <hibernate-jpa-schemagen.version>6.2.2</hibernate-jpa-schemagen.version>
+        <java-console-toolkit.version>1.0.1</java-console-toolkit.version>
+        <jibx.version>1.4.2</jibx.version>
+        <jline.version>3.23.0</jline.version>
+        <jmock.version>2.8.2</jmock.version>
+        <permazen.version>5.0.0</permazen.version>
+        <querystream.version>2.0.0</querystream.version>
+        <rhino.version>1.7.6</rhino.version>
+        <saxon.version>10.8</saxon.version>
+        <twilio-java.version>9.13.1</twilio-java.version>
+
+        <!-- Plugin versions -->
+        <aspectj-maven-plugin.version>1.14.0</aspectj-maven-plugin.version>
+        <maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
+        <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
+        <maven-plugin-plugin.version>3.9.0</maven-plugin-plugin.version>
+        <maven-project-info-reports-plugin.version>3.1.2</maven-project-info-reports-plugin.version>
+        <maven-site-plugin.version>3.9.1</maven-site-plugin.version>
+        <maven-version-plugin.version>2.13.0</maven-version-plugin.version>
+        <modernizer-maven-plugin.version>2.7.0</modernizer-maven-plugin.version>
+        <properties-maven-plugin.version>1.0.0</properties-maven-plugin.version>
+        <spotbugs-maven-plugin.version>4.7.3.6</spotbugs-maven-plugin.version>
+        <xml-maven-plugin.version>1.0.2</xml-maven-plugin.version>
+
+        <!-- Plugin dependency versions -->
+        <extra.enforcer.rules.version>1.5.1</extra.enforcer.rules.version>
+
+        <!-- Plugin development-related dependencies -->
+        <maven-artifact.version>3.6.3</maven-artifact.version>
+        <maven-plugin-tools.version>3.9.0</maven-plugin-tools.version>
+        <maven-project.version>3.0-alpha-2</maven-project.version>
+        <plugin-api.version>3.3.9</plugin-api.version>
+
+        <!-- Maven extension versions -->
+        <maven-wagon-scm-extension.version>3.3.4</maven-wagon-scm-extension.version>
+
+    </properties>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>sonatype-nexus-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>sonatype-nexus-staging</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <dependencyManagement>
+        <dependencies>
+
+        <!-- ADDITIONAL DEPENDENCIES -->
+
+            <!-- ant-contrib -->
+            <dependency>
+                <groupId>ant-contrib</groupId>
+                <artifactId>ant-contrib</artifactId>
+                <version>${ant-contrib.version}</version>
+            </dependency>
+
+            <!-- Apache POI -->
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${apache-poi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${apache-poi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml-schemas</artifactId>
+                <version>${apache-poi.version}</version>
+            </dependency>
+
+            <!-- BoneCP -->
+            <dependency>
+                <groupId>com.jolbox</groupId>
+                <artifactId>bonecp</artifactId>
+                <version>${bonecp.version}</version>
+            </dependency>
+
+            <!-- Cronutils -->
+            <dependency>
+                <groupId>com.cronutils</groupId>
+                <artifactId>cron-utils</artifactId>
+                <version>${cronutils.version}</version>
+            </dependency>
+
+            <!-- DellRoad Stuff -->
+            <dependency>
+                <groupId>org.dellroad</groupId>
+                <artifactId>dellroad-stuff-jibx</artifactId>
+                <version>${dellroad-stuff.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.dellroad</groupId>
+                <artifactId>dellroad-stuff-main</artifactId>
+                <version>${dellroad-stuff.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.dellroad</groupId>
+                <artifactId>dellroad-stuff-spring</artifactId>
+                <version>${dellroad-stuff.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.dellroad</groupId>
+                <artifactId>dellroad-stuff-pobj</artifactId>
+                <version>${dellroad-stuff.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.dellroad</groupId>
+                <artifactId>dellroad-stuff-vaadin24</artifactId>
+                <version>${dellroad-stuff.version}</version>
+            </dependency>
+
+            <!-- Expressly -->
+            <dependency>
+                <groupId>org.glassfish.expressly</groupId>
+                <artifactId>expressly</artifactId>
+                <version>${expressly.version}</version>
+            </dependency>
+
+            <!-- Guava -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
+            <!-- Hibernate JPA Schema Generator -->
+            <dependency>
+                <groupId>org.dellroad</groupId>
+                <artifactId>hibernate-jpa-schemagen</artifactId>
+                <version>${hibernate-jpa-schemagen.version}</version>
+            </dependency>
+
+            <!-- Java Console Toolkit -->
+            <dependency>
+                <groupId>org.dellroad</groupId>
+                <artifactId>java-console-toolkit-core</artifactId>
+                <version>${java-console-toolkit.version</version>
+            </dependency>
+            <dependency>
+                <groupId>org.dellroad</groupId>
+                <artifactId>java-console-toolkit-ssh</artifactId>
+                <version>${java-console-toolkit.version</version>
+            </dependency>
+            <dependency>
+                <groupId>org.dellroad</groupId>
+                <artifactId>java-console-toolkit-jshell</artifactId>
+                <version>${java-console-toolkit.version</version>
+            </dependency>
+
+            <!-- JiBX -->
+            <dependency>
+                <groupId>org.jibx</groupId>
+                <artifactId>jibx-tools</artifactId>
+                <version>${jibx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jibx</groupId>
+                <artifactId>jibx-schema</artifactId>
+                <version>${jibx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jibx</groupId>
+                <artifactId>jibx-bind</artifactId>
+                <version>${jibx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jibx</groupId>
+                <artifactId>jibx-extras</artifactId>
+                <version>${jibx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jibx</groupId>
+                <artifactId>jibx-run</artifactId>
+                <version>${jibx.version}</version>
+            </dependency>
+
+            <!-- JLine -->
+            <dependency>
+                <groupId>org.jline</groupId>
+                <artifactId>jline-reader</artifactId>
+                <version>${jline.version}</version>
+            </dependency>
+
+            <!-- JMock -->
+            <dependency>
+                <groupId>org.jmock</groupId>
+                <artifactId>jmock</artifactId>
+                <version>${jmock.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <!-- Permazen -->
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-core</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-jsck</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-kv</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-kv-array</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-kv-bdb</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-kv-caching</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-kv-cockroach</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-kv-fdb</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-kv-leveldb</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-kv-lmdb</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-kv-mssql</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-kv-mvstore</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-kv-mysql</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-kv-raft</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-kv-simple</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-kv-spanner</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-kv-sql</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-kv-sqlite</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-kv-test</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-kv-xodus</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-main</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-spring</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-util</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+
+            <!-- QueryStream -->
+            <dependency>
+                <groupId>org.dellroad</groupId>
+                <artifactId>querystream-jpa</artifactId>
+                <version>${querystream.version}</version>
+            </dependency>
+
+            <!-- Rhino -->
+            <dependency>
+                <groupId>org.mozilla</groupId>
+                <artifactId>rhino</artifactId>
+                <version>${rhino.version}</version>
+            </dependency>
+
+            <!-- Saxon-HE -->
+            <dependency>
+                <groupId>net.sf.saxon</groupId>
+                <artifactId>Saxon-HE</artifactId>
+                <version>${saxon.version}</version>
+            </dependency>
+
+            <!-- Twilio -->
+            <dependency>
+                <groupId>com.twilio.sdk</groupId>
+                <artifactId>twilio</artifactId>
+                <version>${twilio-java.version}</version>
+            </dependency>
+
+        <!-- PLUGIN DEPENDENCIES -->
+
+            <dependency>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>extra-enforcer-rules</artifactId>
+                <version>${extra.enforcer.rules.version}</version>
+            </dependency>
+
+        <!-- PLUGIN DEVELOPMENT-RELATED DEPENDENCIES -->
+
+            <dependency>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-plugin-api</artifactId>
+                <version>${plugin-api.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-project</artifactId>
+                <version>${maven-project.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-artifact</artifactId>
+                <version>${maven-artifact.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven.plugin-tools</groupId>
+                <artifactId>maven-plugin-annotations</artifactId>
+                <version>${maven-plugin-tools.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>aspectj-maven-plugin</artifactId>
+                    <version>${aspectj-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.jibx</groupId>
+                    <artifactId>jibx-maven-plugin</artifactId>
+                    <version>${jibx.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-checkstyle-plugin</artifactId>
+                    <version>${maven-checkstyle-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-gpg-plugin</artifactId>
+                    <version>${maven-gpg-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-plugin-plugin</artifactId>
+                    <version>${maven-plugin-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-project-info-reports-plugin</artifactId>
+                    <version>${maven-project-info-reports-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>${maven-site-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.gaul</groupId>
+                    <artifactId>modernizer-maven-plugin</artifactId>
+                    <version>${modernizer-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>io.permazen</groupId>
+                    <artifactId>permazen-maven-plugin</artifactId>
+                    <version>${permazen.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>properties-maven-plugin</artifactId>
+                    <version>${properties-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.github.spotbugs</groupId>
+                    <artifactId>spotbugs-maven-plugin</artifactId>
+                    <version>${spotbugs-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>versions-maven-plugin</artifactId>
+                    <version>${maven-version-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>xml-maven-plugin</artifactId>
+                    <version>${xml-maven-plugin.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>
