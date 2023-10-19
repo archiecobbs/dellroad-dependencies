@@ -212,17 +212,17 @@
             <dependency>
                 <groupId>org.dellroad</groupId>
                 <artifactId>java-console-toolkit-core</artifactId>
-                <version>${java-console-toolkit.version</version>
+                <version>${java-console-toolkit.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dellroad</groupId>
                 <artifactId>java-console-toolkit-ssh</artifactId>
-                <version>${java-console-toolkit.version</version>
+                <version>${java-console-toolkit.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dellroad</groupId>
                 <artifactId>java-console-toolkit-jshell</artifactId>
-                <version>${java-console-toolkit.version</version>
+                <version>${java-console-toolkit.version}</version>
             </dependency>
 
             <!-- JiBX -->
