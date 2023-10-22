@@ -70,7 +70,6 @@
         <aspectj-maven-plugin.version>1.14.0</aspectj-maven-plugin.version>
         <maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
-        <maven-plugin-plugin.version>3.9.0</maven-plugin-plugin.version>
         <maven-project-info-reports-plugin.version>3.1.2</maven-project-info-reports-plugin.version>
         <maven-site-plugin.version>3.9.1</maven-site-plugin.version>
         <maven-version-plugin.version>2.13.0</maven-version-plugin.version>
@@ -85,6 +84,7 @@
         <!-- Plugin development-related dependencies -->
         <maven-artifact.version>3.6.3</maven-artifact.version>
         <maven-plugin-tools.version>3.9.0</maven-plugin-tools.version>
+        <maven-plugin-plugin.version>3.9.0</maven-plugin-plugin.version>
         <maven-project.version>3.0-alpha-2</maven-project.version>
         <plugin-api.version>3.3.9</plugin-api.version>
 
