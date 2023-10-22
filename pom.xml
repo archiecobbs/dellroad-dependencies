@@ -82,11 +82,11 @@
         <extra.enforcer.rules.version>1.5.1</extra.enforcer.rules.version>
 
         <!-- Plugin development-related dependencies -->
-        <maven-artifact.version>3.6.3</maven-artifact.version>
-        <maven-plugin-tools.version>3.9.0</maven-plugin-tools.version>
-        <maven-plugin-plugin.version>3.9.0</maven-plugin-plugin.version>
+        <maven-artifact.version>3.9.5</maven-artifact.version>
+        <maven-plugin-plugin.version>3.10.1</maven-plugin-plugin.version>
+        <maven-plugin-tools.version>3.10.1</maven-plugin-tools.version>
         <maven-project.version>3.0-alpha-2</maven-project.version>
-        <plugin-api.version>3.3.9</plugin-api.version>
+        <plugin-api.version>3.9.5</plugin-api.version>
 
         <!-- Maven extension versions -->
         <maven-wagon-scm-extension.version>3.3.4</maven-wagon-scm-extension.version>
