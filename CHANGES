@@ -1,3 +1,7 @@
+Version 3.1.5.0
+
+    - Update to spring-boot-dependencies 3.1.5
+
 Version 3.1.4.1 Released October 23, 2023
 
     - Bump plugin development versions.
