@@ -1,3 +1,10 @@
+Version 3.1.7.0 Released January 5, 2024
+
+    - Add jopt-simple at version 6.0-alpha-3
+    - Bump guava to 33.0.0-jre
+    - Bump java-console-toolkit to 1.0.3
+    - Update to spring-boot-dependencies 3.1.7
+
 Version 3.1.5.0 Released November 10, 2023
 
     - Declare "hibernate-jpa-schemagen" as a maven plugin, not a dependency
