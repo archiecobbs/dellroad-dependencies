@@ -51,7 +51,7 @@
         <apache-poi.version>4.1.2</apache-poi.version>
         <bonecp.version>0.8.0.RELEASE</bonecp.version>
         <cronutils.version>9.0.2</cronutils.version>
-        <dellroad-stuff.version>3.0.0</dellroad-stuff.version>
+        <dellroad-stuff.version>3.0.1</dellroad-stuff.version>
         <expressly.version>5.0.0</expressly.version>
         <guava.version>33.0.0-jre</guava.version>
         <java-console-toolkit.version>1.0.3</java-console-toolkit.version>
