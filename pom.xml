@@ -8,10 +8,10 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>3.1.7</version>
+        <version>3.2.2</version>
     </parent>
     <groupId>org.dellroad</groupId>
-    <version>3.1.7.1</version>
+    <version>3.2.2.0</version>
     <artifactId>dellroad-dependencies</artifactId>
     <name>DellRoad Dependencies</name>
     <packaging>pom</packaging>
@@ -68,7 +68,7 @@
 
         <!-- Plugin versions -->
         <aspectj-maven-plugin.version>1.14.0</aspectj-maven-plugin.version>
-        <hibernate-jpa-schemagen.version>6.2.2</hibernate-jpa-schemagen.version>
+        <hibernate-jpa-schemagen.version>6.4.0</hibernate-jpa-schemagen.version>
         <maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
         <maven-project-info-reports-plugin.version>3.1.2</maven-project-info-reports-plugin.version>
