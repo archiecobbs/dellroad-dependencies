@@ -1,3 +1,7 @@
+Version Next
+
+    - Bump dellroad-stuff to 3.0.3
+
 Version 3.2.2.0 Released February 4, 2024
 
     - Update to spring-boot-dependencies 3.2.2
