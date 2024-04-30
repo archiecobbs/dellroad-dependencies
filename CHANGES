@@ -1,3 +1,7 @@
+Version Next
+
+    - Add Apache commons-text 1.12.0
+
 Version 3.2.3.0 Released February 29, 2024
 
     - Update to spring-boot-dependencies 3.2.3
