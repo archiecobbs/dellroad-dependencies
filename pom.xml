@@ -8,10 +8,10 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>3.2.3</version>
+        <version>3.2.5</version>
     </parent>
     <groupId>org.dellroad</groupId>
-    <version>3.2.3.0</version>
+    <version>3.2.5.0</version>
     <artifactId>dellroad-dependencies</artifactId>
     <name>DellRoad Dependencies</name>
     <packaging>pom</packaging>
@@ -52,10 +52,10 @@
         <bonecp.version>0.8.0.RELEASE</bonecp.version>
         <commons-text.version>1.12.0</commons-text.version>
         <cronutils.version>9.0.2</cronutils.version>
-        <dellroad-stuff.version>3.0.4</dellroad-stuff.version>
+        <dellroad-stuff.version>3.0.5</dellroad-stuff.version>
         <expressly.version>5.0.0</expressly.version>
         <guava.version>33.0.0-jre</guava.version>
-        <java-console-toolkit.version>1.0.3</java-console-toolkit.version>
+        <java-console-toolkit.version>1.0.4</java-console-toolkit.version>
         <jibx.version>1.4.2</jibx.version>
         <jline.version>3.23.0</jline.version>
         <jmock.version>2.8.2</jmock.version>
