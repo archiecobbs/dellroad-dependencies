@@ -8,10 +8,10 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>3.2.5</version>
+        <version>3.2.7</version>
     </parent>
     <groupId>org.dellroad</groupId>
-    <version>3.2.5.0</version>
+    <version>3.2.7.0</version>
     <artifactId>dellroad-dependencies</artifactId>
     <name>DellRoad Dependencies</name>
     <packaging>pom</packaging>
@@ -46,49 +46,49 @@
         <maven-javadoc-plugin.version>3.6.0</maven-javadoc-plugin.version><!-- avoid MJAVADOC-769 -->
 
         <!-- Additional dependency versions -->
-        <ant.version>1.10.11</ant.version>
+        <ant.version>1.10.14</ant.version>
         <ant-contrib.version>1.0b3</ant-contrib.version>
-        <apache-poi.version>4.1.2</apache-poi.version>
+        <apache-poi.version>5.3.0</apache-poi.version>
         <bonecp.version>0.8.0.RELEASE</bonecp.version>
         <commons-text.version>1.12.0</commons-text.version>
-        <cronutils.version>9.0.2</cronutils.version>
-        <dellroad-stuff.version>3.0.5</dellroad-stuff.version>
+        <cronutils.version>9.2.1</cronutils.version>
+        <dellroad-stuff.version>3.0.7</dellroad-stuff.version>
         <expressly.version>5.0.0</expressly.version>
-        <guava.version>33.0.0-jre</guava.version>
+        <guava.version>33.2.1-jre</guava.version>
         <java-console-toolkit.version>1.0.4</java-console-toolkit.version>
         <jibx.version>1.4.2</jibx.version>
-        <jline.version>3.23.0</jline.version>
-        <jmock.version>2.8.2</jmock.version>
+        <jline.version>3.26.1</jline.version>
+        <jmock.version>2.13.1</jmock.version>
         <jopt-simple.version>6.0-alpha-3</jopt-simple.version>
         <jsr305.version>3.0.2</jsr305.version>
         <permazen.version>5.0.0</permazen.version>
         <querystream.version>2.0.0</querystream.version>
-        <rhino.version>1.7.6</rhino.version>
-        <saxon.version>10.8</saxon.version>
-        <twilio-java.version>9.13.1</twilio-java.version>
+        <rhino.version>1.7.15</rhino.version>
+        <saxon.version>10.9</saxon.version>
+        <twilio-java.version>10.4.1</twilio-java.version>
 
         <!-- Plugin versions -->
-        <aspectj-maven-plugin.version>1.14.0</aspectj-maven-plugin.version>
-        <hibernate-jpa-schemagen.version>6.4.0</hibernate-jpa-schemagen.version>
-        <maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
+        <aspectj-maven-plugin.version>1.15.0</aspectj-maven-plugin.version>
+        <hibernate-jpa-schemagen.version>6.4.1</hibernate-jpa-schemagen.version>
+        <maven-checkstyle-plugin.version>3.4.0</maven-checkstyle-plugin.version>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
         <maven-project-info-reports-plugin.version>3.1.2</maven-project-info-reports-plugin.version>
         <maven-site-plugin.version>3.9.1</maven-site-plugin.version>
         <maven-version-plugin.version>2.13.0</maven-version-plugin.version>
         <modernizer-maven-plugin.version>2.7.0</modernizer-maven-plugin.version>
         <properties-maven-plugin.version>1.0.0</properties-maven-plugin.version>
-        <spotbugs-maven-plugin.version>4.7.3.6</spotbugs-maven-plugin.version>
-        <xml-maven-plugin.version>1.0.2</xml-maven-plugin.version>
+        <spotbugs-maven-plugin.version>4.8.6.2</spotbugs-maven-plugin.version>
+        <xml-maven-plugin.version>1.1.0</xml-maven-plugin.version>
 
         <!-- Plugin dependency versions -->
-        <extra-enforcer-rules.version>1.5.1</extra-enforcer-rules.version>
+        <extra-enforcer-rules.version>1.8.0</extra-enforcer-rules.version>
 
         <!-- Plugin development-related dependencies -->
-        <maven-artifact.version>3.9.5</maven-artifact.version>
-        <maven-plugin-plugin.version>3.10.1</maven-plugin-plugin.version>
-        <maven-plugin-tools.version>3.10.1</maven-plugin-tools.version>
+        <maven-artifact.version>3.9.8</maven-artifact.version>
+        <maven-plugin-plugin.version>3.13.1</maven-plugin-plugin.version>
+        <maven-plugin-annotations.version>3.13.1</maven-plugin-annotations.version>
         <maven-project.version>3.0-alpha-2</maven-project.version>
-        <plugin-api.version>3.9.5</plugin-api.version>
+        <plugin-api.version>3.9.8</plugin-api.version>
 
         <!-- Maven extension versions -->
         <maven-wagon-scm-extension.version>3.3.4</maven-wagon-scm-extension.version>
@@ -151,7 +151,7 @@
 
             <!-- Apache Commons Text -->
             <dependency>
-                <groupId>commons-text</groupId>
+                <groupId>org.apache.commons</groupId>
                 <artifactId>commons-text</artifactId>
                 <version>${commons-text.version}</version>
             </dependency>
@@ -452,7 +452,7 @@
             <dependency>
                 <groupId>org.apache.maven.plugin-tools</groupId>
                 <artifactId>maven-plugin-annotations</artifactId>
-                <version>${maven-plugin-tools.version}</version>
+                <version>${maven-plugin-annotations.version}</version>
                 <scope>provided</scope>
             </dependency>
 

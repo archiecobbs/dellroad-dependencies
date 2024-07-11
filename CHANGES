@@ -1,3 +1,8 @@
+Version 3.2.7.0
+
+    - Update to spring-boot-dependencies 3.2.7
+    - Update many other dependency versions
+
 Version 3.2.5.0 Released May 20, 2024
 
     - Update to spring-boot-dependencies 3.2.5
