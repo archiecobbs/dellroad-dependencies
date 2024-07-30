@@ -52,7 +52,7 @@
         <bonecp.version>0.8.0.RELEASE</bonecp.version>
         <commons-text.version>1.12.0</commons-text.version>
         <cronutils.version>9.2.1</cronutils.version>
-        <dellroad-stuff.version>3.0.7</dellroad-stuff.version>
+        <dellroad-stuff.version>3.0.8</dellroad-stuff.version>
         <expressly.version>5.0.0</expressly.version>
         <guava.version>33.2.1-jre</guava.version>
         <java-console-toolkit.version>1.0.4</java-console-toolkit.version>
