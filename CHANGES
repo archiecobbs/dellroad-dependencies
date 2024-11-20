@@ -2,7 +2,7 @@ Version Next
 
     - Update dellroad-stuff to 3.0.8
 
-Version 3.2.7.0
+Version 3.2.7.0 Released July 11, 2024
 
     - Update to spring-boot-dependencies 3.2.7
     - Update many other dependency versions
