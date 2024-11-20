@@ -1,6 +1,13 @@
-Version Next
+Version 3.2.11.0
 
+    - Update to spring-boot-dependencies 3.2.11
     - Update dellroad-stuff to 3.0.8
+    - Update guava to 33.3.1
+    - Update java-console-toolkit.version to 1.0.5
+    - Update jline to 3.26.3
+    - Update permazen to 5.1.0
+    - Update twilio-java to 10.6.3
+    - Update many plugin versions
 
 Version 3.2.7.0 Released July 11, 2024
 

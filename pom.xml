@@ -8,10 +8,10 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>3.2.7</version>
+        <version>3.2.11</version>
     </parent>
     <groupId>org.dellroad</groupId>
-    <version>3.2.7.0</version>
+    <version>3.2.11.0</version>
     <artifactId>dellroad-dependencies</artifactId>
     <name>DellRoad Dependencies</name>
     <packaging>pom</packaging>
@@ -54,44 +54,44 @@
         <cronutils.version>9.2.1</cronutils.version>
         <dellroad-stuff.version>3.0.8</dellroad-stuff.version>
         <expressly.version>5.0.0</expressly.version>
-        <guava.version>33.2.1-jre</guava.version>
-        <java-console-toolkit.version>1.0.4</java-console-toolkit.version>
+        <guava.version>33.3.1-jre</guava.version>
+        <java-console-toolkit.version>1.0.5</java-console-toolkit.version>
         <jibx.version>1.4.2</jibx.version>
-        <jline.version>3.26.1</jline.version>
+        <jline.version>3.26.3</jline.version>
         <jmock.version>2.13.1</jmock.version>
         <jopt-simple.version>6.0-alpha-3</jopt-simple.version>
         <jsr305.version>3.0.2</jsr305.version>
-        <permazen.version>5.0.0</permazen.version>
+        <permazen.version>5.1.0</permazen.version>
         <querystream.version>2.0.0</querystream.version>
         <rhino.version>1.7.15</rhino.version>
         <saxon.version>10.9</saxon.version>
-        <twilio-java.version>10.4.1</twilio-java.version>
+        <twilio-java.version>10.6.3</twilio-java.version>
 
         <!-- Plugin versions -->
         <aspectj-maven-plugin.version>1.15.0</aspectj-maven-plugin.version>
         <hibernate-jpa-schemagen.version>6.4.1</hibernate-jpa-schemagen.version>
-        <maven-checkstyle-plugin.version>3.4.0</maven-checkstyle-plugin.version>
-        <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
-        <maven-project-info-reports-plugin.version>3.1.2</maven-project-info-reports-plugin.version>
-        <maven-site-plugin.version>3.9.1</maven-site-plugin.version>
-        <maven-version-plugin.version>2.13.0</maven-version-plugin.version>
-        <modernizer-maven-plugin.version>2.7.0</modernizer-maven-plugin.version>
-        <properties-maven-plugin.version>1.0.0</properties-maven-plugin.version>
-        <spotbugs-maven-plugin.version>4.8.6.2</spotbugs-maven-plugin.version>
+        <maven-checkstyle-plugin.version>3.6.0</maven-checkstyle-plugin.version>
+        <maven-gpg-plugin.version>3.2.7</maven-gpg-plugin.version>
+        <maven-project-info-reports-plugin.version>3.8.0</maven-project-info-reports-plugin.version>
+        <maven-site-plugin.version>3.21.0</maven-site-plugin.version>
+        <maven-version-plugin.version>2.18.0</maven-version-plugin.version>
+        <modernizer-maven-plugin.version>2.9.0</modernizer-maven-plugin.version>
+        <properties-maven-plugin.version>1.2.1</properties-maven-plugin.version>
+        <spotbugs-maven-plugin.version>4.8.6.6</spotbugs-maven-plugin.version>
         <xml-maven-plugin.version>1.1.0</xml-maven-plugin.version>
 
         <!-- Plugin dependency versions -->
-        <extra-enforcer-rules.version>1.8.0</extra-enforcer-rules.version>
+        <extra-enforcer-rules.version>1.9.0</extra-enforcer-rules.version>
 
         <!-- Plugin development-related dependencies -->
         <maven-artifact.version>3.9.8</maven-artifact.version>
-        <maven-plugin-plugin.version>3.13.1</maven-plugin-plugin.version>
-        <maven-plugin-annotations.version>3.13.1</maven-plugin-annotations.version>
+        <maven-plugin-plugin.version>3.15.1</maven-plugin-plugin.version>
+        <maven-plugin-annotations.version>3.15.1</maven-plugin-annotations.version>
         <maven-project.version>3.0-alpha-2</maven-project.version>
-        <plugin-api.version>3.9.8</plugin-api.version>
+        <plugin-api.version>3.9.9</plugin-api.version>
 
         <!-- Maven extension versions -->
-        <maven-wagon-scm-extension.version>3.3.4</maven-wagon-scm-extension.version>
+        <maven-wagon-scm-extension.version>3.5.3</maven-wagon-scm-extension.version>
 
     </properties>
 
