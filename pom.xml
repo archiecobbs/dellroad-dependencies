@@ -279,7 +279,27 @@
             <!-- Permazen -->
             <dependency>
                 <groupId>io.permazen</groupId>
+                <artifactId>permazen-ant</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-cli</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-cliapp</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
                 <artifactId>permazen-core</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-encoding</artifactId>
                 <version>${permazen.version}</version>
             </dependency>
             <dependency>
@@ -385,6 +405,11 @@
             <dependency>
                 <groupId>io.permazen</groupId>
                 <artifactId>permazen-spring</artifactId>
+                <version>${permazen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.permazen</groupId>
+                <artifactId>permazen-test</artifactId>
                 <version>${permazen.version}</version>
             </dependency>
             <dependency>
