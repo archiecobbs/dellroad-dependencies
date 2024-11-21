@@ -50,6 +50,7 @@
         <ant-contrib.version>1.0b3</ant-contrib.version>
         <apache-poi.version>5.3.0</apache-poi.version>
         <bonecp.version>0.8.0.RELEASE</bonecp.version>
+        <commons-io.version>2.18.0</commons-io.version>
         <commons-text.version>1.12.0</commons-text.version>
         <cronutils.version>9.2.1</cronutils.version>
         <dellroad-stuff.version>3.0.8</dellroad-stuff.version>
@@ -149,6 +150,13 @@
                 <groupId>com.jolbox</groupId>
                 <artifactId>bonecp</artifactId>
                 <version>${bonecp.version}</version>
+            </dependency>
+
+            <!-- Apache Commons IO -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io.version}</version>
             </dependency>
 
             <!-- Apache Commons Text -->
