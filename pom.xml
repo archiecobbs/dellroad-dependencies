@@ -73,6 +73,7 @@
         <maven-checkstyle-plugin.version>3.6.0</maven-checkstyle-plugin.version>
         <maven-gpg-plugin.version>3.2.7</maven-gpg-plugin.version>
         <maven-project-info-reports-plugin.version>3.8.0</maven-project-info-reports-plugin.version>
+        <maven-rpm-plugin.version>2.3.0</maven-rpm-plugin.version>
         <maven-site-plugin.version>3.21.0</maven-site-plugin.version>
         <maven-version-plugin.version>2.18.0</maven-version-plugin.version>
         <modernizer-maven-plugin.version>2.9.0</modernizer-maven-plugin.version>
@@ -92,6 +93,7 @@
 
         <!-- Maven extension versions -->
         <maven-wagon-scm-extension.version>3.5.3</maven-wagon-scm-extension.version>
+        <maven-wagon-ssh-external-extension>3.5.3</maven-wagon-ssh-external-extension>
 
     </properties>
 

@@ -1,3 +1,8 @@
+Version Next
+
+    - Add maven-rpm-plugin 2.3.0
+    - Add maven-wagon-ssh-external-extension 3.5.3
+
 Version 3.2.11.0 November 20, 2024
 
     - Update to spring-boot-dependencies 3.2.11
