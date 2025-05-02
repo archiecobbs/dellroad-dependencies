@@ -199,6 +199,11 @@
                 <artifactId>dellroad-stuff-vaadin24</artifactId>
                 <version>${dellroad-stuff.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.dellroad</groupId>
+                <artifactId>dellroad-stuff-test</artifactId>
+                <version>${dellroad-stuff.version}</version>
+            </dependency>
 
             <!-- Expressly -->
             <dependency>

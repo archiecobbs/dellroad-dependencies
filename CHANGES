@@ -3,6 +3,7 @@ Version Next
     - Add commons-io 2.18.0
     - Add maven-rpm-plugin 2.3.0
     - Add maven-wagon-ssh-external-extension 3.5.3
+    - Add missing definition for dellroad-stuff-test
 
 Version 3.2.11.0 November 20, 2024
 
