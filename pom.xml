@@ -8,10 +8,10 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>3.2.12</version>
+        <version>3.4.5</version>
     </parent>
     <groupId>org.dellroad</groupId>
-    <version>3.2.12.0</version>
+    <version>3.4.5.0</version>
     <artifactId>dellroad-dependencies</artifactId>
     <name>DellRoad Dependencies</name>
     <packaging>pom</packaging>
@@ -55,10 +55,11 @@
         <cronutils.version>9.2.1</cronutils.version>
         <dellroad-stuff.version>3.0.8</dellroad-stuff.version>
         <expressly.version>5.0.0</expressly.version>
-        <guava.version>33.3.1-jre</guava.version>
-        <java-console-toolkit.version>1.0.5</java-console-toolkit.version>
+        <guava.version>33.4.8-jre</guava.version>
+        <java-console-toolkit.version>1.1.0</java-console-toolkit.version>
+        <javabox.version>1.0.1</javabox.version>
         <jibx.version>1.4.2</jibx.version>
-        <jline.version>3.26.3</jline.version>
+        <jline.version>3.29.0</jline.version>
         <jmock.version>2.13.1</jmock.version>
         <jopt-simple.version>6.0-alpha-3</jopt-simple.version>
         <jsr305.version>3.0.2</jsr305.version>
@@ -223,6 +224,23 @@
                 <artifactId>jsr305</artifactId>
                 <version>${jsr305.version}</version>
                 <scope>provided</scope>
+            </dependency>
+
+            <!-- JavaBox -->
+            <dependency>
+                <groupId>org.dellroad</groupId>
+                <artifactId>javabox-controls</artifactId>
+                <version>${javabox.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.dellroad</groupId>
+                <artifactId>javabox-core</artifactId>
+                <version>${javabox.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.dellroad</groupId>
+                <artifactId>javabox-execution</artifactId>
+                <version>${javabox.version}</version>
             </dependency>
 
             <!-- Java Console Toolkit -->
