@@ -1,4 +1,4 @@
-Version 3.4.5.0
+Version 3.4.5.0 Released May 2, 2025
 
     - Update to spring-boot-dependencies 3.4.5
     - Update java-console-toolkit to 1.1.0
@@ -6,7 +6,7 @@ Version 3.4.5.0
     - Update jline to 3.29.0
     - Add javabox 1.0.1
 
-Version 3.2.12.0 May 2, 2025
+Version 3.2.12.0 Released May 2, 2025
 
     - Update to spring-boot-dependencies 3.2.12
     - Add commons-io 2.18.0
@@ -14,7 +14,7 @@ Version 3.2.12.0 May 2, 2025
     - Add maven-wagon-ssh-external-extension 3.5.3
     - Add missing definition for dellroad-stuff-test
 
-Version 3.2.11.0 November 20, 2024
+Version 3.2.11.0 Released November 20, 2024
 
     - Update to spring-boot-dependencies 3.2.11
     - Update dellroad-stuff to 3.0.8
