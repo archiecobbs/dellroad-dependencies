@@ -1,5 +1,6 @@
 Version Next
 
+    - Update to spring-boot-dependencies 3.2.12
     - Add commons-io 2.18.0
     - Add maven-rpm-plugin 2.3.0
     - Add maven-wagon-ssh-external-extension 3.5.3
