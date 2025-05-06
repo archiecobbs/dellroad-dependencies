@@ -1,3 +1,7 @@
+Version Next
+
+    - Update commons-text to 1.13.0
+
 Version 3.4.5.0 Released May 2, 2025
 
     - Update to spring-boot-dependencies 3.4.5
