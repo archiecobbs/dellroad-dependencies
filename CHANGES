@@ -1,3 +1,7 @@
+Version 3.4.5.3
+
+    - Change jsr305 scope provided -> compile
+
 Version 3.4.5.2 Released May 10, 2025
 
     - Update javabox to 1.1.0

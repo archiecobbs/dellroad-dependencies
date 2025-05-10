@@ -11,7 +11,7 @@
         <version>3.4.5</version>
     </parent>
     <groupId>org.dellroad</groupId>
-    <version>3.4.5.2</version>
+    <version>3.4.5.3</version>
     <artifactId>dellroad-dependencies</artifactId>
     <name>DellRoad Dependencies</name>
     <packaging>pom</packaging>
@@ -213,7 +213,6 @@
                 <groupId>com.google.code.findbugs</groupId>
                 <artifactId>jsr305</artifactId>
                 <version>${jsr305.version}</version>
-                <scope>provided</scope>
             </dependency>
 
             <!-- JavaBox -->
