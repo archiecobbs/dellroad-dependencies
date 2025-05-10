@@ -49,6 +49,7 @@
         <ant.version>1.10.14</ant.version>
         <ant-contrib.version>1.0b3</ant-contrib.version>
         <apache-poi.version>5.3.0</apache-poi.version>
+        <biz-aqute-bnd.version>7.1.0</biz-aqute-bnd.version>
         <bonecp.version>0.8.0.RELEASE</bonecp.version>
         <commons-io.version>2.18.0</commons-io.version>
         <commons-text.version>1.13.0</commons-text.version>
@@ -134,6 +135,14 @@
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi-ooxml-schemas</artifactId>
                 <version>${apache-poi.version}</version>
+            </dependency>
+
+            <!-- Whatever this is -->
+            <dependency>
+                <groupId>biz.aQute.bnd</groupId>
+                <artifactId>biz.aQute.bnd.annotation</artifactId>
+                <version>${biz-aqute-bnd.version}</version>
+                <scope>provided</scope>
             </dependency>
 
             <!-- BoneCP -->
