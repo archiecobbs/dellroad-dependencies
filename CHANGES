@@ -1,4 +1,4 @@
-Version 3.4.5.3
+Version 3.4.5.3 Released August 22, 2025
 
     - Change jsr305 scope provided -> compile
     - Add biz.aQute.bnd.annotation 7.1.0
