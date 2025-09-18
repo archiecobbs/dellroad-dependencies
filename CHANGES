@@ -1,3 +1,7 @@
+Version 3.4.5.4 Released September 18, 2025
+
+    - Fix typo in property name
+
 Version 3.4.5.3 Released August 22, 2025
 
     - Change jsr305 scope provided -> compile

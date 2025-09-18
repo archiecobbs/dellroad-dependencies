@@ -11,7 +11,7 @@
         <version>3.4.5</version>
     </parent>
     <groupId>org.dellroad</groupId>
-    <version>3.4.5.3</version>
+    <version>3.4.5.4</version>
     <artifactId>dellroad-dependencies</artifactId>
     <name>DellRoad Dependencies</name>
     <packaging>pom</packaging>
@@ -97,7 +97,7 @@
 
         <!-- Maven extension versions -->
         <maven-wagon-scm-extension.version>3.5.3</maven-wagon-scm-extension.version>
-        <maven-wagon-ssh-external-extension>3.5.3</maven-wagon-ssh-external-extension>
+        <maven-wagon-ssh-external-extension.version>3.5.3</maven-wagon-ssh-external-extension.version>
 
     </properties>
 
