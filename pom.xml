@@ -517,19 +517,6 @@
 
     <build>
 
-        <plugins>
-            <plugin>
-                <groupId>org.sonatype.central</groupId>
-                <artifactId>central-publishing-maven-plugin</artifactId>
-                <version>${central-publishing-maven-plugin.version}</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <publishingServerId>central</publishingServerId>
-                    <autoPublish>true</autoPublish>
-                </configuration>
-            </plugin>
-        </plugins>
-
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -602,16 +589,26 @@
                     <artifactId>xml-maven-plugin</artifactId>
                     <version>${xml-maven-plugin.version}</version>
                 </plugin>
+                <plugin>
+                    <groupId>org.sonatype.central</groupId>
+                    <artifactId>central-publishing-maven-plugin</artifactId>
+                    <version>${central-publishing-maven-plugin.version}</version>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
     <profiles>
 
-        <!-- Maven Central requires signed artifacts -->
+        <!-- Use "mnv -P central deploy" to deploy to Maven Central -->
         <profile>
-            <id>sign</id>
+            <id>central</id>
             <build>
                 <plugins>
+
+                    <!--
+                        Maven Central requires signed artifacts. You can use
+                        "-Dgpg.keyname=foo" to specify a specific private key.
+                    -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
@@ -624,6 +621,17 @@
                                 </goals>
                             </execution>
                         </executions>
+                    </plugin>
+
+                    <!-- Deploy to Maven Central and publish -->
+                    <plugin>
+                        <groupId>org.sonatype.central</groupId>
+                        <artifactId>central-publishing-maven-plugin</artifactId>
+                        <extensions>true</extensions>
+                        <configuration>
+                            <publishingServerId>central</publishingServerId>
+                            <autoPublish>true</autoPublish>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>

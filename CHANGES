@@ -1,5 +1,6 @@
 Version Next
 
+    - Replace profile "sign" with "central"
     - Update maven-gpg-plugin to 3.2.8.
     - Update JiBX to 1.4.5.
 
