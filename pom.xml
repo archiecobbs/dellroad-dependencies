@@ -72,7 +72,7 @@
         <aspectj-maven-plugin.version>1.15.0</aspectj-maven-plugin.version>
         <hibernate-jpa-schemagen.version>6.4.1</hibernate-jpa-schemagen.version>
         <maven-checkstyle-plugin.version>3.6.0</maven-checkstyle-plugin.version>
-        <maven-gpg-plugin.version>3.2.7</maven-gpg-plugin.version>
+        <maven-gpg-plugin.version>3.2.8</maven-gpg-plugin.version>
         <maven-project-info-reports-plugin.version>3.8.0</maven-project-info-reports-plugin.version>
         <maven-rpm-plugin.version>2.3.0</maven-rpm-plugin.version>
         <maven-site-plugin.version>3.21.0</maven-site-plugin.version>

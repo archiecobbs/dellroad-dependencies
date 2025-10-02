@@ -1,6 +1,7 @@
 Version 3.2.12.1 Released October 2, 2025
 
-    - Fix typo in property name
+    - Update maven-gpg-plugin to 3.2.8.
+    - Fix typo in property name.
 
 Version 3.2.12.0 Released May 2, 2025
 
