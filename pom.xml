@@ -70,6 +70,7 @@
 
         <!-- Plugin versions -->
         <aspectj-maven-plugin.version>1.15.0</aspectj-maven-plugin.version>
+        <central-publishing-maven-plugin.version>0.9.0</central-publishing-maven-plugin.version>
         <hibernate-jpa-schemagen.version>6.4.1</hibernate-jpa-schemagen.version>
         <maven-checkstyle-plugin.version>3.6.0</maven-checkstyle-plugin.version>
         <maven-gpg-plugin.version>3.2.8</maven-gpg-plugin.version>
@@ -97,17 +98,6 @@
         <maven-wagon-ssh-external-extension.version>3.5.3</maven-wagon-ssh-external-extension.version>
 
     </properties>
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>sonatype-nexus-staging</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
 
     <dependencyManagement>
         <dependencies>
@@ -500,6 +490,7 @@
     </dependencyManagement>
 
     <build>
+
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -572,16 +563,26 @@
                     <artifactId>xml-maven-plugin</artifactId>
                     <version>${xml-maven-plugin.version}</version>
                 </plugin>
+                <plugin>
+                    <groupId>org.sonatype.central</groupId>
+                    <artifactId>central-publishing-maven-plugin</artifactId>
+                    <version>${central-publishing-maven-plugin.version}</version>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
     <profiles>
 
-        <!-- Maven Central requires signed artifacts -->
+        <!-- Use "mnv -P central deploy" to deploy to Maven Central -->
         <profile>
-            <id>sign</id>
+            <id>central</id>
             <build>
                 <plugins>
+
+                    <!--
+                        Maven Central requires signed artifacts. You can use
+                        "-Dgpg.keyname=foo" to specify a specific private key.
+                    -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
@@ -594,6 +595,17 @@
                                 </goals>
                             </execution>
                         </executions>
+                    </plugin>
+
+                    <!-- Deploy to Maven Central and publish -->
+                    <plugin>
+                        <groupId>org.sonatype.central</groupId>
+                        <artifactId>central-publishing-maven-plugin</artifactId>
+                        <extensions>true</extensions>
+                        <configuration>
+                            <publishingServerId>central</publishingServerId>
+                            <autoPublish>true</autoPublish>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>

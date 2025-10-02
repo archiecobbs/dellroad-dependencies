@@ -1,5 +1,6 @@
 Version 3.2.12.1 Released October 2, 2025
 
+    - Replace profile "sign" with "central"
     - Update maven-gpg-plugin to 3.2.8.
     - Fix typo in property name.
 
