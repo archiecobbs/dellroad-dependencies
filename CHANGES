@@ -1,5 +1,6 @@
 Version Next
 
+    - Update maven-gpg-plugin to 3.2.8.
     - Update JiBX to 1.4.5.
 
 Version 3.4.5.4 Released September 18, 2025
