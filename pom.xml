@@ -599,7 +599,7 @@
     </build>
     <profiles>
 
-        <!-- Use "mnv -P central deploy" to deploy to Maven Central -->
+        <!-- Use "mvn -P central deploy" to deploy to Maven Central -->
         <profile>
             <id>central</id>
             <build>
