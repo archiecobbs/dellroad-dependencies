@@ -1,3 +1,12 @@
+Version 4.0.5.7 Released April 21, 2026
+
+    - Fix typo in properties-maven-plugin version
+    - Fix <groupId> for commons-io
+    - Update dellroad-stuff to 3.2.0
+    - Update hibernate-jpa-schemagen to 7.2.1
+    - Add commons-compress 2.21.0
+    - Add checkerframework 3.55.1
+
 Version 4.0.5.6 Released April 9, 2026
 
     - Fix typo in properties-maven-plugin version
