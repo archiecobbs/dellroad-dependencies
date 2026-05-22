@@ -53,6 +53,7 @@
         <bonecp.version>0.8.0.RELEASE</bonecp.version>
         <checkerframework.version>3.55.1</checkerframework.version>
         <commons-compress.version>1.28.0</commons-compress.version>
+        <commons-csv.version>1.14.1</commons-csv.version>
         <commons-io.version>2.21.0</commons-io.version>
         <commons-text.version>1.15.0</commons-text.version>
         <cronutils.version>9.2.1</cronutils.version>
@@ -123,6 +124,13 @@
                 <groupId>ant-contrib</groupId>
                 <artifactId>ant-contrib</artifactId>
                 <version>${ant-contrib.version}</version>
+            </dependency>
+
+            <!-- Apache Commons CSV -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-csv</artifactId>
+                <version>${commons-csv.version}</version>
             </dependency>
 
             <!-- Apache POI -->
