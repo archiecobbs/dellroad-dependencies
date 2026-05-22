@@ -1,5 +1,6 @@
-Version Next
+Version 4.0.6.0 Released May 22, 2026
 
+    - Update to spring-boot-dependencies 4.0.6
     - Add commons-csv 1.14.1
     - Update ant to 1.10.17
     - Update checkerframework to 4.1.0
