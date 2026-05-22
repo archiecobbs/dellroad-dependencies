@@ -1,6 +1,11 @@
 Version Next
 
     - Add commons-csv 1.14.1
+    - Update ant to 1.10.17
+    - Update checkerframework to 4.1.0
+    - Update commons-io to 2.22.0
+    - Update guava to 33.6.0-jre
+    - Update jline to 4.1.1
 
 Version 4.0.5.7 Released April 21, 2026
 
