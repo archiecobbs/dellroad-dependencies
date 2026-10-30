@@ -8,10 +8,10 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>4.0.6</version>
+        <version>4.0.9</version>
     </parent>
     <groupId>org.dellroad</groupId>
-    <version>4.0.6.0</version>
+    <version>4.0.9.0</version>
     <artifactId>dellroad-dependencies</artifactId>
     <name>DellRoad Dependencies</name>
     <packaging>pom</packaging>
@@ -56,16 +56,16 @@
         <commons-csv.version>1.14.1</commons-csv.version>
         <commons-io.version>2.22.0</commons-io.version>
         <commons-text.version>1.15.0</commons-text.version>
-        <cronutils.version>9.2.1</cronutils.version>
-        <dellroad-stuff.version>3.2.0</dellroad-stuff.version>
+        <cron-utils.version>9.2.1</cron-utils.version>
+        <dellroad-stuff.version>3.2.1</dellroad-stuff.version>
         <expressly.version>6.0.0</expressly.version>
-        <guava.version>33.6.0-jre</guava.version>
+        <guava.version>33.7.2-jre</guava.version>
         <jakarta.enterprise.cdi-api.version>4.1.0</jakarta.enterprise.cdi-api.version>
         <java-console-toolkit.version>1.2.0</java-console-toolkit.version>
-        <javabox.version>1.3.0</javabox.version>
+        <javabox.version>1.3.1</javabox.version>
         <jcip-annotations.version>1.0</jcip-annotations.version>
         <jibx.version>1.4.5</jibx.version>
-        <jline.version>4.1.1</jline.version>
+        <jline.version>4.4.8</jline.version>
         <jmock.version>2.13.1</jmock.version>
         <jopt-simple.version>6.0-alpha-3</jopt-simple.version>
         <jsr305.version>3.0.2</jsr305.version>
@@ -76,30 +76,30 @@
         <twilio-java.version>11.3.6</twilio-java.version>
 
         <!-- Plugin versions -->
-        <aspectj-maven-plugin.version>1.16.0</aspectj-maven-plugin.version>
+        <aspectj-maven-plugin.version>1.16.1</aspectj-maven-plugin.version>
         <checkerframework-maven-plugin.version>1.8.2</checkerframework-maven-plugin.version>
-        <central-publishing-maven-plugin.version>0.10.0</central-publishing-maven-plugin.version>
-        <hibernate-jpa-schemagen-maven-plugin.version>7.2.1</hibernate-jpa-schemagen-maven-plugin.version>
+        <central-publishing-maven-plugin.version>0.12.0</central-publishing-maven-plugin.version>
+        <hibernate-jpa-schemagen-maven-plugin.version>7.2.2</hibernate-jpa-schemagen-maven-plugin.version>
         <maven-checkstyle-plugin.version>3.6.0</maven-checkstyle-plugin.version>
         <maven-gpg-plugin.version>3.2.8</maven-gpg-plugin.version>
         <maven-project-info-reports-plugin.version>3.9.0</maven-project-info-reports-plugin.version>
-        <maven-rpm-plugin.version>2.3.0</maven-rpm-plugin.version>
-        <maven-site-plugin.version>3.21.0</maven-site-plugin.version>
-        <maven-version-plugin.version>2.21.0</maven-version-plugin.version>
-        <modernizer-maven-plugin.version>3.3.0</modernizer-maven-plugin.version>
-        <properties-maven-plugin.version>1.3.0</properties-maven-plugin.version>
-        <spotbugs-maven-plugin.version>4.9.8.3</spotbugs-maven-plugin.version>
-        <xml-maven-plugin.version>1.2.1</xml-maven-plugin.version>
+        <maven-site-plugin.version>3.22.0</maven-site-plugin.version>
+        <versions-maven-plugin.version>2.23.0</versions-maven-plugin.version>
+        <modernizer-maven-plugin.version>3.5.0</modernizer-maven-plugin.version>
+        <properties-maven-plugin.version>1.3.1</properties-maven-plugin.version>
+        <rpm-maven-plugin.version>2.3.0</rpm-maven-plugin.version>
+        <spotbugs-maven-plugin.version>4.10.5.0</spotbugs-maven-plugin.version>
+        <xml-maven-plugin.version>1.2.2</xml-maven-plugin.version>
 
         <!-- Plugin dependency versions -->
-        <extra-enforcer-rules.version>1.12.0</extra-enforcer-rules.version>
+        <extra-enforcer-rules.version>1.12.1</extra-enforcer-rules.version>
 
         <!-- Plugin development-related dependencies -->
-        <maven-artifact.version>3.9.14</maven-artifact.version>
-        <maven-plugin-plugin.version>3.15.2</maven-plugin-plugin.version>
-        <maven-plugin-annotations.version>3.15.2</maven-plugin-annotations.version>
+        <maven-artifact.version>3.10.0</maven-artifact.version>
+        <maven-plugin-plugin.version>3.16.0</maven-plugin-plugin.version>
+        <maven-plugin-annotations.version>3.16.0</maven-plugin-annotations.version>
         <maven-project.version>3.0-alpha-2</maven-project.version>
-        <plugin-api.version>3.9.14</plugin-api.version>
+        <maven-plugin-api.version>3.9.14</maven-plugin-api.version>
 
         <!-- Maven extension versions -->
         <maven-wagon-scm-extension.version>3.5.3</maven-wagon-scm-extension.version>
@@ -207,7 +207,7 @@
             <dependency>
                 <groupId>com.cronutils</groupId>
                 <artifactId>cron-utils</artifactId>
-                <version>${cronutils.version}</version>
+                <version>${cron-utils.version}</version>
             </dependency>
 
             <!-- DellRoad Stuff -->
@@ -541,7 +541,7 @@
             <dependency>
                 <groupId>org.apache.maven</groupId>
                 <artifactId>maven-plugin-api</artifactId>
-                <version>${plugin-api.version}</version>
+                <version>${maven-plugin-api.version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
@@ -633,7 +633,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>versions-maven-plugin</artifactId>
-                    <version>${maven-version-plugin.version}</version>
+                    <version>${versions-maven-plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
@@ -649,6 +649,11 @@
                     <groupId>org.checkerframework</groupId>
                     <artifactId>checkerframework-maven-plugin</artifactId>
                     <version>${checkerframework-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>rpm-maven-plugin</artifactId>
+                    <version>${rpm-maven-plugin.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
