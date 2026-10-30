@@ -1,3 +1,10 @@
+Version 4.1.2.0 Released October 30, 2026
+
+    - Update to spring-boot-dependencies 4.1.2
+    - Update ant to 1.10.18
+    - Update apache-poi to 6.0.0
+    - Update biz-aqute-bnd to 7.4.0
+
 Version 4.0.9.0 Released October 30, 2026
 
     - Update to spring-boot-dependencies 4.0.9
