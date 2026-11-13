@@ -1,3 +1,12 @@
+Version Next
+
+    - Update rhino to 1.9.2
+    - Update Saxon-HE to 13.1
+    - Update twilio-java to 13.1.0
+    - Add spotbugs 4.10.5
+    - Add checkstyle 14.3.0
+    - Add property ${spring-boot-dependencies.version}
+
 Version 4.1.2.0 Released October 30, 2026
 
     - Update to spring-boot-dependencies 4.1.2
